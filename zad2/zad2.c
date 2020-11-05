@@ -52,22 +52,22 @@ void iloczyn(float macierz [][100], float wektor [][100], int wiersze_m, int wie
 
 int main(int argc, char *argv[])
 {
-    FILE *plikm;
-    FILE *plikw;
+    FILE *A;
+    FILE *x;
     
     float wektor [100][100];
     float macierz [100][100];
      int wiersze_m;
      int wiersze_w;
      
-     plikm = fopen( argv[1], "r");
-     plikw = fopen (argv[2], "r");
+     A = fopen( argv[1], "r");
+     x = fopen (argv[2], "r");
     
     wiersze_m wczytaj_macierz(plikm,macierz);
     wiersze_w wczytaj_macierz(plikw,wektor);
     
     printf("%d", wiersze_m);
-    iloczyn(macierz,wektor,wiersze_m,);
+    iloczyn(macierz,wektor,wiersze_m);
     
     return 0;
 }
