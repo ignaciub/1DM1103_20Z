@@ -17,6 +17,5 @@ y = x*x;
 printf ("Wartość %f do kwadratu to %f.\n", x, y );
 
 
-
     return 0;
 }
