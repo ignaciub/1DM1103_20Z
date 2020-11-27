@@ -1,4 +1,4 @@
-eś#include "funkcje.h"
+#include "funkcje.h"
 
 void wczytaj(FILE * fin, struct Macierz *m) {
     int i,j;
